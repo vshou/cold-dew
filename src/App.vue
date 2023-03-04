@@ -1,7 +1,15 @@
 <template>
-  <h1>Welcome to Cold Dew</h1>
+  <router-view/>
 </template>
 
 <script setup lang="ts">
-  console.log('Welcome to Cold Dew')
+  console.log('\n' +
+      '   _____      _     _   _____                \n' +
+      '  / ____|    | |   | | |  __ \\               \n' +
+      ' | |     ___ | | __| | | |  | | _____      __\n' +
+      ' | |    / _ \\| |/ _` | | |  | |/ _ \\ \\ /\\ / /\n' +
+      ' | |___| (_) | | (_| | | |__| |  __/\\ V  V / \n' +
+      '  \\_____\\___/|_|\\__,_| |_____/ \\___| \\_/\\_/  \n' +
+      '                                             \n' +
+      '                                             \n')
 </script>
