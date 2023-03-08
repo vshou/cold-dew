@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
   import { onMounted, ref } from 'vue'
-  import { HTTP_IMG_ADDR, HTTP_MUSIC_ADDR } from "../constants/constant";
+  import { HTTP_IMG_ADDR, HTTP_MUSIC_ADDR } from '../constants/ConfigParam'
 
 
   const music_video = ref()
