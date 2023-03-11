@@ -31,14 +31,14 @@ import {ref, watch} from "vue";
 
 <style lang="less" scoped>
   .shade_div {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .7);
     opacity: 0;
     transition: .4s;
     .load_img_div {
       position: absolute;
       .load_img {
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
       }
     }
   }
