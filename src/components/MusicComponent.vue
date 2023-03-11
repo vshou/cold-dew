@@ -12,8 +12,8 @@
 
 <script setup lang="ts">
   import { onMounted, ref } from 'vue'
-  import { HTTP_IMG_ADDR, HTTP_MUSIC_ADDR } from '../constants/ConfigParam'
   import { Loading } from '../store/LoadingStore'
+  import { HTTP_IMG_ADDR, HTTP_MUSIC_ADDR } from '../constants/ConfigParam'
 
   const loading = Loading();
   const music_video = ref()
@@ -24,12 +24,10 @@
   const music_bg = ref<string>(HTTP_IMG_ADDR + "music_bg.png")
   const is_play = ref<boolean>(false)
   const operationFun = () => {
-
     loading.sign = true
     setTimeout(() => {
       loading.sign = false
-    }, 4000)
-
+    }, 3000)
     if (is_play.value) {
       is_play.value = false
       music_video.value.pause()
