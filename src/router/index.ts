@@ -1,10 +1,16 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import { DynamicRouting } from '../declare/TypeDeclare'
+import HomePage from '../views/HomePage.vue'
 import page from '../views/page.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
+        component: HomePage
+    },
+    {
+        path: '/page',
         component: page
     }
 ]
@@ -15,11 +21,6 @@ const router = createRouter({
 })
 
 let first_load = true
-
-type DynamicRouting = {
-    path: string
-    component: string
-}
 
 const pathArr: Array<DynamicRouting> = [
     {
