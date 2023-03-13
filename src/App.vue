@@ -17,7 +17,6 @@
       '                                             \n' +
       '                                             \n')
   console.log('🚀 https://github.com/withv/cold-dew')
-
   const loading = Loading();
 </script>
 
