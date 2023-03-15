@@ -6,6 +6,7 @@ import store from './store'
 const app = createApp(App);
 
 
+
 app.directive('throttle', (el, binding) => {
     el.addEventListener('click', () => {
         el.style.pointerEvents = 'none'
